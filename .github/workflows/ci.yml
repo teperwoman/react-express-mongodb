@@ -43,7 +43,7 @@ jobs:
           context: ./frontend
           file: ./frontend/Dockerfile
           push: true
-          tags: teperwoman/react-e-m-frontend:latest
+          tags: teperwoman/:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
