@@ -1,3 +1,8 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: react-express-mongodb
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
