@@ -98,7 +98,7 @@ jobs:
        #changer le nom de yaml
       - uses: Azure/k8s-deploy@v1.3
         with:
-          namespace: 'default'
+          namespace: 'react-express-mongodb'
           manifests: |
               kubernetes/all-in-one-mongo.yaml
           kubectl-version: 'latest'
@@ -106,7 +106,7 @@ jobs:
        #changer le nom de yaml
       - uses: Azure/k8s-deploy@v1.3
         with:
-          namespace: 'default'
+          namespace: 'react-express-mongodb'
           manifests: |
               kubernetes/all-in-one-backend.yaml
           images: 'tftest/react-e-m-backend:${{ github.sha }}'
@@ -115,7 +115,7 @@ jobs:
        #changer le nom de yaml
       - uses: Azure/k8s-deploy@v1.3
         with:
-          namespace: 'default'
+          namespace: 'react-express-mongodb'
           manifests: |
               kubernetes/all-in-one-frontend.yaml
           images: 'tftest/react-e-m-frontend:${{ github.sha }}'
